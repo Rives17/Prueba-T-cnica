@@ -1,0 +1,17 @@
+.row {
+    display: flex;
+
+    width: auto;
+}
+
+ol {
+    margin: auto;
+}
+
+
+
+li {
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+}
