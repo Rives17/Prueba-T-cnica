@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-bar-chart',
@@ -12,28 +13,27 @@ export class BarChartComponent {
   
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
 
-  public date: Date = new Date()
-  public months: string[] = [
-    'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'
-  ];
-  public days: string[] = [
-    'Sun','Mon','Tue','Wed','Thu','Fri','Sat'
-  ]
+  // public d: Date = new Date()
+  // public months: string[] = [
+  //   'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'
+  // ];
+  // public days: string[] = [
+  //   'Sun','Mon','Tue','Wed','Thu','Fri','Sat'
+  // ]
 
-  public monthIndex = this.date.getMonth()
-  public dayIndex = this.date.getDay()
+  // public monthName: string = this.months[this.d.getMonth()]
+  // public dayName: string = this.days[this.d.getDay()]
+  // public dayNum: number = this.d.getDate()
 
-  public monthName = this.months[this.monthIndex]
-  public dayName = this.days[this.dayIndex]
+  // public fullDate: string = `${this.dayName}, ${this.dayNum}th ${this.monthName}`
 
+  public decrementDate = (n: number): string =>  {
+   return moment().subtract(n, 'days').format("ddd, Do MMM");
 
-  public fullDate: any = `${this.dayName}, ${this.date.getDate()}th ${this.monthName}`
-
-
-
+  }
+  
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
-    // We use these empty structures as placeholders for dynamic theming.
     scales: {
       x: {
         
@@ -51,7 +51,15 @@ export class BarChartComponent {
   };
 
   public barChartData: ChartData<'bar'> = {
-    labels: [ this.fullDate, '', '', '', '', '', '' ],
+    labels: [ 
+      this.decrementDate(6),
+      this.decrementDate(5), 
+      this.decrementDate(4), 
+      this.decrementDate(3), 
+      this.decrementDate(2), 
+      this.decrementDate(1), 
+      this.decrementDate(0)
+    ],
     datasets: [
       
     ]
