@@ -3,21 +3,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { TableComponent } from './table/table.component';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
     DonutChartsComponent,
-    BarChartComponent
+    BarChartComponent,
+    TableComponent
   ],
   imports: [
    CommonModule,
-   NgChartsModule
+   NgChartsModule,
+   FormsModule
   ],
   exports: [
     DonutChartsComponent,
-    BarChartComponent
+    BarChartComponent,
+    TableComponent
   ]
 })
 export class ComponentsModule { }

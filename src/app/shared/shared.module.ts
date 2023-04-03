@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../material/material.module';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 
@@ -12,7 +13,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
   declarations: [
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
   exports: [
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    MenuComponent
   ]
 })
 export class SharedModule { }

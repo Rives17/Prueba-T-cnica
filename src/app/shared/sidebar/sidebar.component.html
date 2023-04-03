@@ -2,12 +2,16 @@
     <div class="logo py-4 text-center">
         <img src="../../../assets/images/logo-angular.png" alt="Logo">
     </div>
-    <div class="container text-center">
-        <a class="mb-5" mat-list-item routerLink="dashboard" routerLinkActive="list-item-active">
-            <mat-icon>dashboard</mat-icon>
-            <p>Dashboard</p>
-        </a>
-        <a class="mb-5" mat-list-item routerLink="boards" routerLinkActive="list-item-active">
+    <div class="container" >
+        <div class="row" >
+            <div class="col-12"*ngFor="let item of submenuItem">
+                <a class="nav-link mb-5" [routerLink]="item.url" routerLinkActive="list-item-active">
+                    <mat-icon>{{item.icono}}</mat-icon>
+                    <p>{{item.titulo}}</p>
+                </a>
+            </div>
+        </div>
+        <!-- <a class="mb-5" mat-list-item routerLink="boards" routerLinkActive="list-item-active">
             <mat-icon>reorder</mat-icon>
             <p>Board</p>
         </a>
@@ -24,9 +28,9 @@
             <p>Strategy</p>
         </a>
         <a mat-list-item routerLink="global" routerLinkActive="list-item-active">
-            <mat-icon>world</mat-icon>
+            <mat-icon></mat-icon>
             <p>Global</p>
-        </a>
+        </a> -->
 
     </div>
 </mat-nav-list>

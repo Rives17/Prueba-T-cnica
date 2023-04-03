@@ -1,6 +1,9 @@
 .container {
     padding-top: 50px;
 }
+.row {
+    text-align: center;
+}
 
 img {
     width: 80px;
@@ -17,13 +20,20 @@ p {
 
 a {
     margin: auto;
-    padding: 0;
+    padding: 5px;
     width: 60px;
-    height: 80px;
+    height: 60px;
 }
 
-.mat-list-item {
- border-radius: 5px;
-}
+a:hover {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+a:active {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
 
 
