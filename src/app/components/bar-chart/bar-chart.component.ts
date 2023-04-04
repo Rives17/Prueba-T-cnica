@@ -6,26 +6,11 @@ import * as moment from 'moment';
 @Component({
   selector: 'app-bar-chart',
   templateUrl: './bar-chart.component.html',
-  styles: [
-  ]
+  styleUrls: ['./bar-chart.component.css']
 })
 export class BarChartComponent {
   
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
-
-  // public d: Date = new Date()
-  // public months: string[] = [
-  //   'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'
-  // ];
-  // public days: string[] = [
-  //   'Sun','Mon','Tue','Wed','Thu','Fri','Sat'
-  // ]
-
-  // public monthName: string = this.months[this.d.getMonth()]
-  // public dayName: string = this.days[this.d.getDay()]
-  // public dayNum: number = this.d.getDate()
-
-  // public fullDate: string = `${this.dayName}, ${this.dayNum}th ${this.monthName}`
 
   public decrementDate = (n: number): string =>  {
    return moment().subtract(n, 'days').format("ddd, Do MMM");
@@ -34,13 +19,17 @@ export class BarChartComponent {
   
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
+    maintainAspectRatio: false,
+  
     scales: {
       x: {
-        
       },
       y: {
+        ticks: {
+          stepSize: 20
+        },
         max: 100,
-        min: 0
+        min: 0,
       }
     },
     plugins: {
@@ -64,6 +53,5 @@ export class BarChartComponent {
       
     ]
   };
-
   public barChartType: ChartType = 'bar';
 }

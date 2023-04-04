@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class SubmenuService {
+export class MenuService {
 
   constructor() { }
 
@@ -76,7 +76,7 @@ export class SubmenuService {
     {
       titulo: 'Global',
       url: 'global',
-      icono: '',
+      icono: 'public',
       submenu6: [
         { titulo: 'General Info', url: 'generalInfo'},
         { titulo: 'Request', url: 'request'},

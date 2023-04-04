@@ -1,4 +1,4 @@
-import { SubmenuService } from 'src/app/services/submenu.service';
+import { MenuService } from 'src/app/services/menu.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,10 +8,9 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
-  submenuItem!: any[];
-  constructor(private submenuService: SubmenuService) {
-    this.submenuItem = submenuService.menu
-    console.log(this.submenuItem);
+  menuItem!: any[];
+  constructor(private menuService: MenuService) {
+    this.menuItem = menuService.menu
     
   }
 

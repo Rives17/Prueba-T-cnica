@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SubmenuService } from 'src/app/services/submenu.service';
+import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,10 +8,10 @@ import { SubmenuService } from 'src/app/services/submenu.service';
 })
 export class MenuComponent {
 
-  submenuItems!: any[];
+  menuItems!: any[];
 
-  constructor( private submenuService: SubmenuService) {
-    this.submenuItems = submenuService.menu
+  constructor( private menuService: MenuService) {
+    this.menuItems = menuService.menu
     
   }
 }
