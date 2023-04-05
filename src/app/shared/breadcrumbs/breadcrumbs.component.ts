@@ -18,8 +18,10 @@ export class BreadcrumbsComponent {
         filter( (event): event is ActivationEnd => event instanceof ActivationEnd ),
         filter( (event: ActivationEnd) => event.snapshot.firstChild === null ),
         map( (event: ActivationEnd) => (event.snapshot.data) ),
-        )
+      )
       .subscribe( ({ titulo }) => this.titulo = titulo )
+      
+      
       
       
   }

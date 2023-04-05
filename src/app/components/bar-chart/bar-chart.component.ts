@@ -34,7 +34,7 @@ export class BarChartComponent {
     },
     plugins: {
       legend: {
-        display: true,
+        display: false
       }
     }
   };
@@ -50,7 +50,11 @@ export class BarChartComponent {
       this.decrementDate(0)
     ],
     datasets: [
-      
+      { data: ([25, 25, 25, 25, 25, 25, 25]),label: 'Desing', stack: 'a', backgroundColor: 'rgb(142, 176, 255)'},
+      { data: [25, 25, 25, 25, 25, 25, 25], label: 'Others', stack: 'a', backgroundColor: 'rgb(82, 125, 222)' },
+      { data: [25, 25, 25, 25, 25, 25, 25], label: 'Programing', stack: 'a', backgroundColor: 'rgb(24, 85, 255)' },
+      { data: [25, 25, 25, 25, 25, 25, 25], label: 'Networks', stack: 'a', backgroundColor: 'rgb(0, 6, 182)' },
+
     ]
   };
   public barChartType: ChartType = 'bar';

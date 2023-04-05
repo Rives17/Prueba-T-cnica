@@ -11,6 +11,7 @@ import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -28,7 +29,8 @@ import { MatInputModule } from '@angular/material/input';
     MatDatepickerModule,
     MatRippleModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule
   ],
   exports: [
     MatSidenavModule,
@@ -41,7 +43,9 @@ import { MatInputModule } from '@angular/material/input';
     MatDatepickerModule,
     MatRippleModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule
+    
   ]
 })
 export class MaterialModule { }

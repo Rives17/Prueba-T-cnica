@@ -1,6 +1,6 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { ChartConfiguration, ChartData, ChartType, Color } from 'chart.js';
+import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 
 @Component({

@@ -16,11 +16,12 @@ mat-drawer-container {
     background-color: rgb(245, 245, 245);
 }
 
-.container {
+.container-fluid {
     border: 2px solid rgb(209, 209, 209);
     border-radius: 5px;
     background-color: white;
     box-shadow: 1px 1px 6px #b4b4b4;
     height: auto;
     min-height: 90vh;
+    width: 93vw;
 }

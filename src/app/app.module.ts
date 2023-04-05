@@ -23,7 +23,6 @@ import { AppComponent } from './app.component';
     PagesModule,
     SharedModule,
     FormsModule,
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UsersService } from 'src/app/services/users.service';
 
 
 
@@ -9,6 +10,15 @@ import { Component } from '@angular/core';
 })
 export class TableComponent {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  public users!: any[];
 
+  constructor(private usersService: UsersService) {
+    this.usersService.getUsers()
+      .subscribe(
+        data => (this.users = data.results , console.log(data.results))
+      )
+    
+
+    
+  }
 }
