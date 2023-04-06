@@ -3,3 +3,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Variables */
+:root {
+    --blue-lower: rgb(142, 176, 255);
+    --blue-low: rgb(82, 125, 222);
+    --blue-medium: rgb(24, 85, 255);
+    --blue-high: rgb(0, 6, 182);
+}

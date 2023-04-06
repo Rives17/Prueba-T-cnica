@@ -19,7 +19,7 @@ a:hover {
     color: #9e9e9e;
   }
   
-  a:active {
+  .active {
     border-radius: 5px;
     background: #dce3f0;
     color: #9e9e9e;

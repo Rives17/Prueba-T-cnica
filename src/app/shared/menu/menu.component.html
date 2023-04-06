@@ -21,7 +21,7 @@
             <div class="col-12" *ngFor="let item of menuItems" >
 
               <div class="nav-item" *ngFor="let subItem of item.submenu" >
-                <a class="nav-link" aria-current="page" [routerLink]="subItem.url">{{subItem.titulo}}</a>
+                <a class="nav-link" aria-current="page" routerLinkActive="active" [routerLink]="subItem.url">{{subItem.titulo}}</a>
               </div>
               
             </div>

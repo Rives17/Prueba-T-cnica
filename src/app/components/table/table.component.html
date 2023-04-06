@@ -3,27 +3,35 @@
     <div class="card">
       <div class="card-body">
         <div class="table-responsive">
-          <table class="table">
+          <table class="table align-middle">
             <thead>
               <tr>
                 <th>Employee</th>
-                <th>Email</th>
-                <th>Location</th>
+                <th>Work description</th>
                 <th>Tag</th>
+                <th>Dedication</th>
                 <th>Availabilty</th>
                 <th>Amount</th>
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let user of users">
-                <td> <img [src]="user.picture.medium" alt="Profile picture" class="avatar"> {{user.name.first}}</td>
-                <td>{{user.email}}</td>
-                <td>{{user.location.state}}</td>
+                <td> <img [src]="user.picture" alt="Profile picture" class="avatar"> {{user.name}}</td>
+                <td>{{user.work}}</td>
                 <td>
-                  <span class="label label-primary">Programing</span>
-                  <span class="label label-info">Networks</span>
+                  <span [ngClass]="{'desing': user.tag == 'Desing', 
+                                    'others': user.tag == 'Others',
+                                    'programing': user.tag == 'Programing',
+                                    'networks': user.tag == 'Networks'}">
+                                    {{user.tag}}
+                  </span>
+                  <!-- <span class="label label-secondary">{{user.tag}}</span>
+                  <span class="label label-danger">{{user.tag}}</span>
+                  <span class="label label-info">{{user.tag}}</span> -->
                 </td>
-                <td>{{user.name.first}}</td>
+                <td>{{user.dedication}}</td>
+                <td [ngClass]="{'absent': user.availabilty == 'Absent'}">{{user.availabilty}}</td>
+                <td>{{user.amount}}</td>
               </tr>
             </tbody>
           </table>

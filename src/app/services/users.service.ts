@@ -10,7 +10,7 @@ export class UsersService {
   constructor(private http: HttpClient) { }
 
   public getUsers(): Observable<any> {
-    return this.http.get("https://randomuser.me/api/?results=5")
+    return this.http.get("../assets/users.json")
 
   }
   // async getUsers(): Promise<void> {

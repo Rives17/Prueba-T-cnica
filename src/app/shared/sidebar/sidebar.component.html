@@ -2,35 +2,14 @@
     <div class="logo py-4 text-center">
         <img src="../../../assets/images/logo-angular.png" alt="Logo">
     </div>
-    <div class="container" >
+    <div class="container" > 
         <div class="row" >
             <div class="col-12"*ngFor="let item of menuItem">
-                <a class="nav-link mb-5" [routerLink]="item.url" routerLinkActive="list-item-active">
+                <a class="nav-link mb-5" [routerLink]="item.url" routerLinkActive="active">
                     <mat-icon>{{item.icono}}</mat-icon>
                     <p>{{item.titulo}}</p>
                 </a>
             </div>
         </div>
-        <!-- <a class="mb-5" mat-list-item routerLink="boards" routerLinkActive="list-item-active">
-            <mat-icon>reorder</mat-icon>
-            <p>Board</p>
-        </a>
-        <a class="mb-5" mat-list-item routerLink="projects" routerLinkActive="list-item-active">
-            <mat-icon>shared</mat-icon>
-            <p>Projects</p>
-        </a>
-        <a class="mb-5" mat-list-item routerLink="roadmap" routerLinkActive="list-item-active">
-            <mat-icon>map</mat-icon>
-            <p>Roadmap</p>
-        </a>
-        <a class="mb-5" mat-list-item routerLink="strategy" routerLinkActive="list-item-active">
-            <mat-icon>build</mat-icon>
-            <p>Strategy</p>
-        </a>
-        <a mat-list-item routerLink="global" routerLinkActive="list-item-active">
-            <mat-icon></mat-icon>
-            <p>Global</p>
-        </a> -->
-
     </div>
 </mat-nav-list>

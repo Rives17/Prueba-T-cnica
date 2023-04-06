@@ -1,4 +1,30 @@
+
 .avatar {
     width: 30px;
     border-radius: 100%;
 }
+
+.desing {
+    background-color: var(--blue-lower);
+}
+.others {
+    background-color: var(--blue-low);
+}
+.programing {
+    background-color: var(--blue-medium);
+}
+.networks {
+    background-color: var(--blue-high);
+}
+
+.absent {
+    color: var(--blue-lower);
+}
+
+span {
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: small;
+}
+

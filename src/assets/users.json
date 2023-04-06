@@ -1,0 +1,55 @@
+{
+   "results": [
+      {
+         "name": "Sergio Pérez",
+         "work": "Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia iaculis, morbi facilisi eu penatibus.",
+         "tag": "Programing",
+         "dedication": "8h",
+         "availabilty": "Absent",
+         "amount": "720USD",
+         "picture": "https://randomuser.me/api/portraits/med/men/72.jpg"
+      },
+      {
+         "name": "Fernando García",
+         "work": "Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia iaculis, morbi facilisi eu penatibus.",
+         "tag": "Networks",
+         "dedication": "8h",
+         "availabilty": "Available",
+         "amount": "720USD",
+         "picture": "https://randomuser.me/api/portraits/med/men/20.jpg"
+      },
+      {
+         "name": "María Gómez",
+         "work": "Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia iaculis, morbi facilisi eu penatibus.",
+         "tag": "Others",
+         "dedication": "8h",
+         "availabilty": "Available",
+         "amount": "720USD",
+         "picture": "https://randomuser.me/api/portraits/med/women/74.jpg"
+      },
+      {
+         "name": "Natalia Martín",
+         "work": "Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia iaculis, morbi facilisi eu penatibus.",
+         "tag": "Networks",
+         "dedication": "8h",
+         "availabilty": "Absent",
+         "amount": "720USD",
+         "picture": "https://randomuser.me/api/portraits/med/women/6.jpg"
+      },
+      {
+         "name": "Eva Soriano",
+         "work": "Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia iaculis, morbi facilisi eu penatibus.",
+         "tag": "Desing",
+         "dedication": "8h",
+         "availabilty": "Available",
+         "amount": "720USD",
+         "picture": "https://randomuser.me/api/portraits/med/women/10.jpg"
+      }
+   ],
+   "info": {
+      "seed": "780746baa3a73987",
+      "results": 1,
+      "page": 1,
+      "version": "1.4"
+   }
+}
