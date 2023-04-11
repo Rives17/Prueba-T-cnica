@@ -13,12 +13,4 @@ export class UsersService {
     return this.http.get("../assets/users.json")
 
   }
-  // async getUsers(): Promise<void> {
-
-  //   await fetch("https://randomuser.me/api/?results=5")
-  //     .then((results) => {
-  //       return results.json();
-  //     })
-  // }
-  
 }

@@ -25,9 +25,6 @@
                                     'networks': user.tag == 'Networks'}">
                                     {{user.tag}}
                   </span>
-                  <!-- <span class="label label-secondary">{{user.tag}}</span>
-                  <span class="label label-danger">{{user.tag}}</span>
-                  <span class="label label-info">{{user.tag}}</span> -->
                 </td>
                 <td>{{user.dedication}}</td>
                 <td [ngClass]="{'absent': user.availabilty == 'Absent'}">{{user.availabilty}}</td>

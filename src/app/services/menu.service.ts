@@ -13,7 +13,7 @@ export class MenuService {
       url: 'dashboard',
       icono: 'dashboard',
       submenu: [
-        { titulo: 'General Info', url: '/generalInfo'},
+        { titulo: 'General Info', url: 'generalInfo'},
         { titulo: 'Request', url: 'request'},
         { titulo: 'Stakeholders', url: 'stakeholders'},
         { titulo: 'Team', url: 'team'},
