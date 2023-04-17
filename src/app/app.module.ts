@@ -10,21 +10,25 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GeneralInfoComponent } from './pages/projects/general-info/general-info.component';
+import { ComponentsModule } from "./components/components.module";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    MaterialModule,
-    PagesModule,
-    SharedModule,
-    FormsModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        GeneralInfoComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        MaterialModule,
+        PagesModule,
+        SharedModule,
+        FormsModule,
+        ComponentsModule
+    ]
 })
 export class AppModule { }

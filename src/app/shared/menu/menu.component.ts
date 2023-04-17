@@ -11,7 +11,6 @@ export class MenuComponent {
   menuItems!: any[];
 
   constructor( private menuService: MenuService) {
-    this.menuItems = this.menuService.menu
-    console.log(this.menuItems);
+    this.menuItems = menuService.menu
   }
 }

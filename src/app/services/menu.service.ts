@@ -37,15 +37,15 @@ export class MenuService {
     },
     {
       titulo: 'Projects',
-      url: 'projects',
+      url: 'projects/generalInfo',
       icono: 'shared',
       submenu3: [
-        { titulo: 'General Info', url: 'generalInfo'},
-        { titulo: 'Request', url: 'request'},
-        { titulo: 'Stakeholders', url: 'stakeholders'},
-        { titulo: 'Team', url: 'team'},
-        { titulo: 'Files', url: 'files'},
-        { titulo: 'Budget', url: 'budget'},
+        { titulo: 'General Info', url: 'projects/generalInfo'},
+        { titulo: 'Request', url: 'projects/request'},
+        { titulo: 'Stakeholders', url: 'projects/stakeholders'},
+        { titulo: 'Team', url: 'projects/team'},
+        { titulo: 'Files', url: 'projects/files'},
+        { titulo: 'Budget', url: 'projects/budget'},
       ]
     },
     {
