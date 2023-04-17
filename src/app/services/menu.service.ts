@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class MenuService {
 
   constructor() { }
@@ -39,7 +40,7 @@ export class MenuService {
       url: 'projects',
       icono: 'shared',
       submenu3: [
-        { titulo: 'General Info', url: 'projects/generalInfo'},
+        { titulo: 'General Info', url: 'generalInfo'},
         { titulo: 'Request', url: 'request'},
         { titulo: 'Stakeholders', url: 'stakeholders'},
         { titulo: 'Team', url: 'team'},

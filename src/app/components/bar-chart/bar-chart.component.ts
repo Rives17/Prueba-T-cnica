@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ChartData, ChartOptions, ChartType } from 'chart.js';
 import * as ChartLabel from 'chartjs-plugin-datalabels';
 import * as moment from 'moment';
-import 'chartjs-plugin-datalabels';
 
 @Component({
   selector: 'app-bar-chart',
@@ -16,6 +15,15 @@ export class BarChartComponent {
    return moment().subtract(n, 'days').format("ddd, Do MMM");
 
   }
+  
+  public generateLabels(numLabels: number): string[] {
+      const labels = [];
+    
+      for (let i = numLabels - 1; i >= 0; i--) {
+         labels.push(this.decrementDate(i));
+      }
+      return labels;
+   }
   
   public barChartOptions: ChartOptions = {
     responsive: true,
@@ -38,19 +46,12 @@ export class BarChartComponent {
       }
     }
   };
-
+ 
 
 
   public barChartData: ChartData<'bar'> = {
-    labels: [ 
-      this.decrementDate(6),
-      this.decrementDate(5), 
-      this.decrementDate(4), 
-      this.decrementDate(3), 
-      this.decrementDate(2), 
-      this.decrementDate(1), 
-      this.decrementDate(0)
-    ],
+
+    labels: this.generateLabels(7),
     datasets: [
       { data: [25, 25, 25, 25, 25, 25, 25], label: 'Desing', stack: 'a', backgroundColor: 'rgb(142, 176, 255)'},
       { data: [25, 25, 25, 25, 25, 25, 25], label: 'Others', stack: 'a', backgroundColor: 'rgb(82, 125, 222)' },

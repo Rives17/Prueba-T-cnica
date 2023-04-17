@@ -18,7 +18,5 @@ export class TableComponent {
         data => (this.users = data.results , console.log(data.results))
       )
     
-
-    
   }
 }
