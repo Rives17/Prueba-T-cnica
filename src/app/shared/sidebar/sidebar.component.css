@@ -1,12 +1,15 @@
 .container {
-    padding-top: 50px;
+    width: auto;
+    padding: 50px 0;
+    height: 600px;
+    display: flex;
 }
 .row {
     text-align: center;
 }
 
 img {
-    width: 80px;
+    width: 80%;
 }
 p {
     margin: 0;
@@ -22,7 +25,6 @@ a {
     margin: auto;
     padding: 5px;
     width: 60px;
-    height: 60px;
 }
 
 a:hover {
@@ -34,5 +36,3 @@ a:hover {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
 }
-
-

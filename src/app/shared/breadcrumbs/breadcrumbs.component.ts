@@ -24,11 +24,7 @@ export class BreadcrumbsComponent {
           return route;
         }))
         .subscribe( route => this.titulo = route.snapshot.data['titulo'])
-        // .subscribe( route => console.log(route.snapshot)
-      
-      
-      
-      
+
   }
 
 }

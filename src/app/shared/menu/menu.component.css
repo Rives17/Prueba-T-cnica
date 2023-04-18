@@ -24,3 +24,11 @@ a:hover {
     background: #dce3f0;
     color: #9e9e9e;
   }
+
+
+  @media screen and (max-width: 720px) {
+    .col-12{
+        display: block;
+        text-align: center;
+    }
+  }

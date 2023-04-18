@@ -25,3 +25,10 @@ mat-drawer-container {
     min-height: 90vh;
     width: 97%;
 }
+
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+    mat-drawer {
+        width: 70px;
+    }
+}
